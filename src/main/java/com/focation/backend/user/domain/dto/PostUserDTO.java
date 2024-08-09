@@ -1,22 +1,13 @@
 package com.focation.backend.user.domain.dto;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class PostUserDTO {
     private String uuid;
     private String email;
     private String name;
     private String password;
-
-    public PostUserDTO(String email, String name, String password){
-        this.email = email;
-        this.name = name;
-        this.password = password;
-    }
-    public PostUserDTO(String uuid,String email, String name, String password){
-        this.uuid = uuid;
-        this.email = email;
-        this.name = name;
-        this.password = password;
-    }
 
     public String getUuid() {
         return uuid;
